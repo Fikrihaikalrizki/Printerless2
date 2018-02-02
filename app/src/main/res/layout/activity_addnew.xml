@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    tools:context="com.example.fikrihaikal.printerless.Addnew">
+
+
+<LinearLayout
+    android:layout_marginTop="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:id="@+id/jenis"
+            android:text="Jenis Print"
+            android:layout_gravity="center_horizontal"            android:layout_margin="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Spinner
+            android:id="@+id/jenisOpt"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/jenis"
+            android:layout_width="wrap_content"
+            android:entries="@array/Jenis_Opsi"
+            android:layout_height="wrap_content"
+            >
+        </Spinner>
+        <Button
+            android:id="@+id/btnChoose"
+            style="?android:textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:layout_toRightOf="@+id/jenisOpt"
+            android:text="Pilih"
+            android:theme="@style/btnStyleone" />
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
